@@ -16,9 +16,8 @@ import com.wuguangxin.base.TimerHandler;
 
 /**
  * 圆形进度View
- * 
- * @author wuguangxin
- * @date 16/8/18 下午2:02
+ *
+ * <p>Created by wuguangxin on 16/8/18 </p>
  */
 public class CircleProgressView extends View {
     private final static int DEF_BACKGROUND_COLOR = 0xFFC2EDFF; // 默认进度条底色
@@ -134,7 +133,7 @@ public class CircleProgressView extends View {
 
     /**
      * 设置当前进度百分比 0.0F~1.0F
-     * @param progress
+     * @param progress 进度
      */
     public void setProgress(final float progress) {
         if(isUseAnim){
@@ -151,7 +150,7 @@ public class CircleProgressView extends View {
 
     /**
      * 设置是否使用动画进度
-     * @param useAnim
+     * @param useAnim 是否使用动画
      */
     public void setUseAnim(boolean useAnim) {
         isUseAnim = useAnim;
@@ -159,7 +158,7 @@ public class CircleProgressView extends View {
 
     /**
      * 动态设置当前进度百分比 0~100
-     * @param progress
+     * @param progress 进度
      */
     public void setProgressOnAnim(final float progress) {
         if(progress == lastProgress) {

@@ -10,8 +10,7 @@ import android.graphics.drawable.Drawable;
 /**
  * 左箭头
  *
- * @author wuguangxin
- * @date: 2016-2-24 下午4:29:14
+ * <p>Created by wuguangxin on 16/2/24 </p>
  */
 public class Arrow extends Drawable{
 	private static final float DEFAULT_WIDTH = 3.5f;

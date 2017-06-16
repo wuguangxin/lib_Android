@@ -6,8 +6,7 @@ import android.view.View.OnClickListener;
 /**
  * 禁止多次点击的 OnClickListener
  *
- * @author wuguangxin
- * @date: 2015-12-24 下午1:54:58
+ * <p>Created by wuguangxin on 15-12-24 </p>
  */
 public abstract class OnDoubleClickListener implements OnClickListener{
 	public static long MIN_DOUBLE_CLICK_SPANCE_TIME = 300;
@@ -18,6 +17,9 @@ public abstract class OnDoubleClickListener implements OnClickListener{
 		super();
 	}
 
+	/**
+	 * @param view view
+	 */
 	public OnDoubleClickListener(View view){
 		super();
 		this.mView = view;

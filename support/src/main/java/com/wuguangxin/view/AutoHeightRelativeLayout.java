@@ -5,10 +5,9 @@ import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
 /**
- * 根据背景图片宽高比例，自动LinearLayout的高度
- * 
- * @author wuguangxin
- * @date 16/11/10 上午11:45
+ * 根据背景图片宽高比例，自动LinearLayout的高度。
+ *
+ * <p>Created by wuguangxin on 16/11/10 </p>
  */
 public class AutoHeightRelativeLayout extends RelativeLayout{
 

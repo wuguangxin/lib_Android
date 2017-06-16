@@ -199,7 +199,7 @@ public class GestureView extends View{
 
 	/**
 	 * 设置手势密码连接的数量值
-	 * @param limitNum
+	 * @param limitNum 手势密码连接的数量值
 	 */
 	public void setLimitNum(int limitNum){
 		this.limitNum = limitNum;
@@ -207,7 +207,7 @@ public class GestureView extends View{
 
 	/**
 	 * 设置key值留验证用，要是没有设置就代表是设置手势密码
-	 * @param key
+	 * @param key  key
 	 */
 	public void setKey(String key){
 		this.key = key;
@@ -598,7 +598,7 @@ public class GestureView extends View{
 	
 	/**
 	 * 设置触觉反馈
-	 * @param shake
+	 * @param shake 是否
 	 */
 	public void setShake(boolean shake){
 		this.shakeable = shake;

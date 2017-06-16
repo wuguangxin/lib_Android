@@ -10,9 +10,8 @@ import com.wuguangxin.utils.Utils;
 
 /**
  * ViewPager 指示器
- * 
- * @author wuguangxin
- * @date 16/12/21 下午5:47
+ *
+ * <p>Created by wuguangxin on 16/12/21 </p>
  */
 public class ViewPagerIndicator extends View {
 	private static final float DEF_CIRCLE_RADIUS = 5;

@@ -5,9 +5,8 @@ import android.util.Log;
 
 /**
  * 日志打印工具类
- * 
- * @author wuguangxin
- * @date: 2014-10-11 上午11:24:34
+ *
+ * <p>Created by wuguangxin on 14/10/11 </p>
  */
 public class Logger{
 	private final static String TAG = "Logger";

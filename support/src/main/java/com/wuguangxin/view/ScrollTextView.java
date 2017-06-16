@@ -9,8 +9,7 @@ import android.widget.TextView;
 /**
  * 跑马灯TextView
  *
- * @author wuguangxin
- * @date: 2015-12-15 上午10:28:46
+ * <p>Created by wuguangxin on 15/12/15 </p>
  */
 public class ScrollTextView extends TextView{
 	public ScrollTextView(Context context){

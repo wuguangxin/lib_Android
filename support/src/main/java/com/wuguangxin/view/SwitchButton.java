@@ -26,11 +26,8 @@ import com.wuguangxin.R;
 /**
  * SwitchButton
  *
- * @author kyleduo
- * @version 1.2.10
- * @since 2014-09-24
+ * <p>Created by wuguangxin on 14/09/24 </p>
  */
-
 public class SwitchButton extends CompoundButton {
 	public static final float DEFAULT_BACK_MEASURE_RATIO = 1.8f;
 	public static final int DEFAULT_THUMB_SIZE_DP = 20;

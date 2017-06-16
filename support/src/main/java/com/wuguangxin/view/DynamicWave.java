@@ -141,7 +141,9 @@ public class DynamicWave extends View {
 
 	/**
 	 * dip转换为px
-	 * @return
+	 * @param context 上下文
+	 * @param dipValue dip值
+	 * @return 返回px值
 	 */
 	public static int dip2px(Context context, float dipValue) {
 		float density = context.getResources().getDisplayMetrics().density;

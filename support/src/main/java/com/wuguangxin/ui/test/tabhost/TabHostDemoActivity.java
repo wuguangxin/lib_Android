@@ -13,9 +13,6 @@ import java.util.ArrayList;
 
 /**
  * TabHost Demo
- * 
- * @author wuguangxin
- * @date: 2015-7-31 下午3:49:15
  */
 public class TabHostDemoActivity extends XinTabActivity{
 	private MyDialog mExitDialog;

@@ -13,8 +13,7 @@ import com.wuguangxin.utils.Utils;
 /**
  * 带有上分割线、下分割线的 LinearLayout
  *
- * @author wuguangxin
- * @date 16/12/28 下午4:29
+ * <p>Created by wuguangxin on 16/12/28 </p>
  */
 public class ItemLinearLayout extends LinearLayout {
 	private static int DEF_DIVIDER_COLOR = 0xffd1d1d1;
@@ -100,8 +99,7 @@ public class ItemLinearLayout extends LinearLayout {
 	/**
 	 * 分割线显示模式
 	 *
-	 * @author wuguangxin
-	 * @date: 2015-7-10 下午4:23:35
+	 * <p>Created by wuguangxin on 15/7/10 </p>
 	 */
 	public enum DividerMode {
 		/**

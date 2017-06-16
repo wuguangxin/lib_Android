@@ -6,9 +6,8 @@ import android.widget.ImageView;
 
 /**
  * 根据宽度自动缩放高度的IamgeView
- * 
- * @author wuguangxin
- * @date 16/11/10 上午11:45
+ *
+ * <p>Created by wuguangxin on 16/11/10 </p>
  */
 public class AutoHeightImageView extends ImageView{
 

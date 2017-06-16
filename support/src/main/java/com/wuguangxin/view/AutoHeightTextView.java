@@ -7,9 +7,8 @@ import android.widget.TextView;
 
 /**
  * 让高度等于宽度
- * 
- * @author wuguangxin
- * @date 16/11/10 上午11:45
+ *
+ * <p>Created by wuguangxin on 16/11/10 </p>
  */
 public class AutoHeightTextView extends TextView {
 

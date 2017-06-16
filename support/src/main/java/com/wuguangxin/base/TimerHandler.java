@@ -8,8 +8,7 @@ import java.util.TimerTask;
 /**
  * 定时处理器。指定首次启动延时、之后间隔执行延时和定时监听器，然后在回调中执行想要做的任务
  *
- * @author wuguangxin
- * @date: 2015-8-9 下午4:04:31
+ * <p>Created by wuguangxin on 15/8/9 </p>
  */
 public class TimerHandler extends TimerTask {
 	private static final long DEFAULT_DELAY = 5000;
@@ -69,9 +68,10 @@ public class TimerHandler extends TimerTask {
 	public void run(){
 		mHandler.post(mRunnable);
 	}
-	
+
 	/**
 	 * 启动
+	 * @return TimerHandler实例
 	 */
 	public TimerHandler start(){
 		isRunning = true;

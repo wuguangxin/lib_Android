@@ -3,6 +3,7 @@ package com.wuguangxin.demo.android;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 import com.wuguangxin.dialog.MyDialog;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,5 +24,7 @@ public class MainActivity extends AppCompatActivity {
         mDialog.setPositiveButton("确认", null);
         mDialog.setNegativeButton("取消", null);
         mDialog.show();
+
+        PullToRefreshScrollView view = new PullToRefreshScrollView(this);
     }
 }

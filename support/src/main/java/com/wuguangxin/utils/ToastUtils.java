@@ -11,9 +11,8 @@ import com.wuguangxin.R;
 
 /**
  * Toast工具类
- * 
- * @author wuguangxin
- * @date: 2014-11-28 下午4:28:16
+ *
+ * <p>Created by wuguangxin on 14/11/28 </p>
  */
 public class ToastUtils{
 	private static Toast mErrorToast;

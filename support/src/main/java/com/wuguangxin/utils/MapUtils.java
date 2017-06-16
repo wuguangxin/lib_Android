@@ -1,13 +1,13 @@
 package com.wuguangxin.utils;
 
+import android.text.TextUtils;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-
-import android.text.TextUtils;
 
 public class MapUtils{
 	private static int MAP_KEY = 0;
@@ -69,7 +69,7 @@ public class MapUtils{
 	}
 	
 	/**
-	 * 获取key在Map<String, String>中的索引
+	 * 获取key在Map中的索引
 	 * @param map
 	 * @param key
 	 * @return

@@ -20,8 +20,6 @@ import android.view.View;
 
 /**
  * 自定义锁屏九宫格组件View
- * 
- * @author wgx
  */
 public class GestureViewDemo extends View {
 	private int startX;

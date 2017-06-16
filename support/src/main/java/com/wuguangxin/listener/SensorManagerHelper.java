@@ -8,6 +8,8 @@ import android.hardware.SensorManager;
 
 /**
  * 实现手机摇晃监听器
+ *
+ * <p>Created by wuguangxin on 15/6/24 </p>
  */
 public class SensorManagerHelper implements SensorEventListener{
 	// 速度阈值，当摇晃速度达到这值后产生作用
@@ -58,11 +60,11 @@ public class SensorManagerHelper implements SensorEventListener{
 	// 摇晃监听接口
 	public interface OnShakeListener{
 		/**
-		 * 重力感应速度值，不要在该回调中做耗时操作。<br>
-		 * speed≈10±：当手机放着不动时；<br>
-		 * speed≈500±：当拿起桌面上的手机时；<br>
-		 * speed≈5000±：当摇晃手机时；<br>
-		 * @param speed 
+		 * 重力感应速度值，不要在该回调中做耗时操作。
+		 * speed≈10±：当手机放着不动时；
+		 * speed≈500±：当拿起桌面上的手机时；
+		 * speed≈5000±：当摇晃手机时；
+		 * @param speed speed
 		 */
 		public void onSpeedChange(double speed);
 		public void onShake();

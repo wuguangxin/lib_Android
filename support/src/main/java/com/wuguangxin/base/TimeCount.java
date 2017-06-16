@@ -7,8 +7,7 @@ import android.widget.TextView;
 /**
  * 倒计时
  *
- * @author wuguangxin
- * @date: 2015-8-20 下午5:55:05
+ * <p>Created by wuguangxin on 15/8/20 </p>
  */
 public class TimeCount extends CountDownTimer{
 	private static final String DEF_REGET = "%s秒";

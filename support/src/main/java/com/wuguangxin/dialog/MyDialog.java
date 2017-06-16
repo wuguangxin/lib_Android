@@ -40,9 +40,8 @@ import java.util.Calendar;
 
 /**
  * 自定义对话框
- * 
- * @author wuguangxin
- * @date: 2014-8-29 下午4:11:36
+ *
+ * <p>Created by wuguangxin on 14/8/29 </p>
  */
 @SuppressLint("HandlerLeak")
 public class MyDialog extends Dialog implements DialogInterface{
@@ -985,8 +984,8 @@ public class MyDialog extends Dialog implements DialogInterface{
 	
 	/**
 	 * 密码框布局点击监听器
-	 * @author wuguangxin
-	 * @date: 2015-9-9 下午6:08:03
+	 *
+	 * <p>Created by wuguangxin on 15/9/9 </p>
 	 */
 	public interface OnClickPasswordEditTextsListener {
 		/**

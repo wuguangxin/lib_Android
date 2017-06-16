@@ -6,9 +6,6 @@ import android.widget.TextView;
 
 /**
  * Demo3Activity
- *
- * @author wuguangxin
- * @date: 2016-1-22 下午5:15:43
  */
 public class Demo2Activity extends Activity {
 	@Override

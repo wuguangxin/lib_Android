@@ -6,7 +6,9 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 /**
- * @author wuguangxin
+ *
+ *
+ * <p>Created by wuguangxin on 15/7/14 </p>
  */
 public class NoScrollViewPager extends ViewPager {
     private boolean scrollable = false;

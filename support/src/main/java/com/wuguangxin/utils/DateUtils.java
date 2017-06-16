@@ -12,8 +12,7 @@ import java.util.Date;
 /**
  * 日期时间工具类
  *
- * @author wuguangxin
- * @date: 2015-3-31 下午3:27:11
+ * <p>Created by wuguangxin on 15-3-31 </p>
  */
 @SuppressLint("SimpleDateFormat")
 public class DateUtils{

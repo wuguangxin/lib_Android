@@ -8,7 +8,7 @@ import android.content.IntentFilter;
 /**
  * 手势密码必须的姿态观察者
  *
- * @author wuguangxin
+ * <p>Created by wuguangxin on 15/3/31 </p>
  */
 public class GestureObserver {
     private OnGestureStatusListener onGestureStatusListener;
@@ -38,8 +38,6 @@ public class GestureObserver {
 
     /**
      * 注销监听
-     *
-     * @return
      */
     public void unregister() {
         if (isRegister && mReceiver != null) {

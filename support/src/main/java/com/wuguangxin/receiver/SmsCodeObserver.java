@@ -1,7 +1,5 @@
 package com.wuguangxin.receiver;
 
-import com.wuguangxin.utils.Logger;
-
 import android.content.ContentResolver;
 import android.content.Context;
 import android.database.ContentObserver;
@@ -10,11 +8,13 @@ import android.net.Uri;
 import android.os.Handler;
 import android.text.TextUtils;
 
+import com.wuguangxin.utils.Logger;
+
 /**
  * 短信验证码监测（观察者模式）
  * 观察短信数据库的变化
- * @author wuguangxin
- * @date: 2014-8-17 下午1:07:55
+ *
+ * <p>Created by wuguangxin on 14/8/17 </p>
  * @deprecated 使用 com.hebei.dafy.c2c.receiver.SmsCodeReceiver
  */
 public abstract class SmsCodeObserver extends ContentObserver {

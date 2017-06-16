@@ -10,8 +10,7 @@ import android.text.TextUtils;
 /**
  * 语音播放器
  * 
- * @author wuguangxin
- * @date: 2015-6-12 上午11:54:03
+ * <p>Created by wuguangxin on 17/6/14 </p>
  */
 public class VoicePlayer{
 	private float mLeftVolume = 1.0f; // 左声道
@@ -190,7 +189,7 @@ public class VoicePlayer{
 //	}
 	/**
 	 * 设置播放监听器
-	 * @param onPlayerListener
+	 * @param onPlayerChangeListener
 	 */
 	public void setOnPlayerChangeListener(OnPlayerChangeListener onPlayerChangeListener){
 		this.onPlayerChangeListener = onPlayerChangeListener;
@@ -198,15 +197,14 @@ public class VoicePlayer{
 
 	/**
 	 * 播放监听器
-	 * 
-	 * @author wuguangxin
-	 * @date: 2015-6-11 上午10:11:35
+	 *
+	 * <p>Created by wuguangxin on 15/6/11 </p>
 	 */
 	public static class OnPlayerChangeListener{
 		/**
 		 * 开始播放
 		 */
-		public void onStart(){};
+		public void onStart(){}
 
 		/**
 		 * 结束播放
@@ -226,29 +224,31 @@ public class VoicePlayer{
 		/**
 		 * 重新播放
 		 */
-		public void onReplay(){};
+		public void onReplay(){}
 	}
 	
-	// 定义一个用来监听电话状态的监听器
-		private class MyPhoneStateListener extends PhoneStateListener {
-			private boolean flag;
-			public void onCallStateChanged(int state, String incomingNumber) {
-				switch (state) {
-					case TelephonyManager.CALL_STATE_RINGING:	// 震铃(incomingNumber只能在震铃状态获取)
-						if (mp != null && mp.isPlaying()) {
-							mp.pause();
-							flag = true;
-						}
-						break;
-					case TelephonyManager.CALL_STATE_OFFHOOK:	// 摘机
-						break;
-					case TelephonyManager.CALL_STATE_IDLE:		// 空闲
-						if (mp != null && !mp.isPlaying() && flag) {
-							mp.start();	// 当挂掉电话后继续播放,如果不做这一步，那么挂掉电话后播放器还是暂停的。
-							flag = false;
-						}
-						break;
-				}
+	/**
+	 * 定义一个用来监听电话状态的监听器
+	 */
+	private class MyPhoneStateListener extends PhoneStateListener {
+		private boolean flag;
+		public void onCallStateChanged(int state, String incomingNumber) {
+			switch (state) {
+				case TelephonyManager.CALL_STATE_RINGING:	// 震铃(incomingNumber只能在震铃状态获取)
+					if (mp != null && mp.isPlaying()) {
+						mp.pause();
+						flag = true;
+					}
+					break;
+				case TelephonyManager.CALL_STATE_OFFHOOK:	// 摘机
+					break;
+				case TelephonyManager.CALL_STATE_IDLE:		// 空闲
+					if (mp != null && !mp.isPlaying() && flag) {
+						mp.start();	// 当挂掉电话后继续播放,如果不做这一步，那么挂掉电话后播放器还是暂停的。
+						flag = false;
+					}
+					break;
 			}
 		}
+	}
 }

@@ -14,8 +14,7 @@ import android.widget.EditText;
 /**
  * 短信验证码接收者（广播接收者）
  *
- * @author wuguangxin
- * @date: 2015-3-18 上午11:50:22
+ * <p>Created by wuguangxin on 15/3/18 </p>
  */
 public class SmsCodeReceiver{
 	private SmsBroadcastReceiver smsBroadcastReceiver;
@@ -37,7 +36,7 @@ public class SmsCodeReceiver{
 	
 	/**
 	 * 启动短信广播接收者
-	 * @return 
+	 * @return  SmsCodeReceiver
 	 */
 	public final SmsCodeReceiver start(){
 		if(context != null && smsBroadcastReceiver != null && filter != null){

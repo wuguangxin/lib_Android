@@ -45,7 +45,7 @@ public class MyHelper {
 
     /**
      * 把文件从RAW下复制到data/data/下
-     * @param context
+     * @param context 上下文
      */
 	public void copyAssetsFile(Context context){
 		try {

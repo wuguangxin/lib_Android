@@ -19,6 +19,11 @@ import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
 
+/**
+ * 手机号码工具类
+ *
+ * <p>Created by wuguangxin on 14/6/2 </p>
+ */
 public class PhoneUtils{
 	private static TelephonyManager phoneManager;
 	/**
@@ -103,7 +108,6 @@ public class PhoneUtils{
 	 * 直接拨打电话
 	 * @param context
 	 * @param tel 号码字符串
-	 * @return
 	 */
 	public static void call(Context context, String tel){
 		context.startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + tel)));
@@ -113,7 +117,6 @@ public class PhoneUtils{
 	 * 打开拨号界面
 	 * @param context
 	 * @param tel 号码字符串
-	 * @return
 	 */
 	public static void callView(Context context, String tel){
 		context.startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + tel)));

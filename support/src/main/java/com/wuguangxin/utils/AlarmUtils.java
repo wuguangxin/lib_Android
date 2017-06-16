@@ -8,8 +8,7 @@ import android.content.Intent;
 /**
  * 到期提醒工具类
  *
- * @author wuguangxin
- * @date: 2015-6-16 下午2:03:46
+ * <p>Created by wuguangxin on 15-6-16 </p>
  */
 public class AlarmUtils{
 	// 阅读资料

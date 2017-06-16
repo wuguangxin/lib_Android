@@ -5,7 +5,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 /**
  * DEX加密解密工具类。
- * <br/>（在程序初始化时设置秘钥 setEncryption()，否则会使用默认的秘钥）
+ * （在程序初始化时设置秘钥 setEncryption()，否则会使用默认的秘钥）
  * Created by wuguangxin on 16/10/11
  */
 public class DES {
@@ -180,10 +180,10 @@ public class DES {
 	}
 
 	/**
-	 * 加密 （如果text为 null 则转换为 ""）<br/>
-	 * 示例：<br/>
-	 * DES.encrypt("") = /VZHDHrzpFU= <br/>
-	 * DES.encrypt(null) = /VZHDHrzpFU= <br/>
+	 * 加密 （如果text为 null 则转换为 ""）<br>
+	 * 示例：
+	 * DES.encrypt("") = /VZHDHrzpFU=
+	 * DES.encrypt(null) = /VZHDHrzpFU=
 	 * @param text
 	 * @param key
 	 * @return
@@ -205,10 +205,10 @@ public class DES {
 	}
 
 	/**
-	 * 解密 （如果text为 null 则转换为 ""）<br/>
-	 * 示例：<br/>
-	 * DES.decrypt("") = null <br/>
-	 * DES.decrypt(null) = null <br/>
+	 * 解密 （如果text为 null 则转换为 ""）
+	 * 示例：
+	 * DES.decrypt("") = null
+	 * DES.decrypt(null) = null
 	 * @param text
 	 * @param key
 	 * @return

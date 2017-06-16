@@ -1,7 +1,5 @@
 package com.wuguangxin.listener;
 
-import com.wuguangxin.utils.Utils;
-
 import android.annotation.SuppressLint;
 import android.graphics.Matrix;
 import android.graphics.PointF;
@@ -10,11 +8,12 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.ImageView;
 
+import com.wuguangxin.utils.Utils;
+
 /**
  * 对图片多点缩放的监听器
  *
- * @author wuguangxin
- * @date: 2015-3-31 上午11:43:46
+ * <p>Created by wuguangxin on 15-3-31 </p>
  */
 public class OnTouchImageListener implements OnTouchListener {
 	/** 图片移动前的矩阵 */

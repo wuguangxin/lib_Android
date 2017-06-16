@@ -1,7 +1,5 @@
 package com.wuguangxin.view;
 
-import com.wuguangxin.R;
-
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,11 +14,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.wuguangxin.R;
+
 /**
  * Item项使用的View（组合控件）
- * 
- * @author wuguangxin
- * @date: 2015-7-9 下午2:42:17
+ *
+ * <p>Created by wuguangxin on 15/7/10 </p>
  */
 public class ItemView extends LinearLayout{
 	private static final int DEFAULT_TEXT_SIZE = 14; // 默认key字体大小(DIP)
@@ -309,7 +308,7 @@ public class ItemView extends LinearLayout{
 
 	/**
 	 * 设置左边图标
-	 * @param resid
+	 * @param drawable
 	 */
 	@SuppressWarnings("deprecation")
 	public void setIconLeftImageResource(Drawable drawable){
@@ -335,7 +334,6 @@ public class ItemView extends LinearLayout{
 
 	/**
 	 * dip转换为px
-	 * @param context
 	 * @param dipValue
 	 * @return
 	 */
@@ -347,7 +345,6 @@ public class ItemView extends LinearLayout{
 
 	/**
 	 * px转换为dip
-	 * @param context
 	 * @param pxValue
 	 * @return
 	 */
@@ -358,9 +355,8 @@ public class ItemView extends LinearLayout{
 
 	/**
 	 * 分割线显示模式
-	 * 
-	 * @author wuguangxin
-	 * @date: 2015-7-10 下午4:23:35
+	 *
+	 * <p>Created by wuguangxin on 15/7/10 </p>
 	 */
 	public static enum DividerMode {
 		/**

@@ -25,10 +25,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**
- * 一个封装部分功能的便捷TabHost，继承XinTabActivity后，只需简单设置Tab数据即可
- * 
- * @author wuguangxin
- * @date: 2016-1-22 下午5:15:43
+ * 一个封装部分功能的便捷TabHost，继承XinTabActivity后，只需简单设置Tab数据即可。
+ *
+ * <p>Created by wuguangxin on 16/1/22 </p>
  */
 @SuppressWarnings("deprecation")
 public abstract class XinTabActivity extends TabActivity{
@@ -123,7 +122,7 @@ public abstract class XinTabActivity extends TabActivity{
 
 	/**
 	 * 设置当前TabHost的位置
-	 * @param position
+	 * @param position TabHost的位置
 	 */
 	public void setCurrentTab(int position){
 		if(mTabHost != null){
@@ -135,7 +134,7 @@ public abstract class XinTabActivity extends TabActivity{
 	 * 获取Tab ItemView
 	 * @param name tab名称
 	 * @param icon tab图标资源id
-	 * @return
+	 * @return View
 	 */
 	@SuppressLint("InflateParams")
 	public View getItemView(String name, int icon){
@@ -148,15 +147,14 @@ public abstract class XinTabActivity extends TabActivity{
 	}
 
 	/**
-	 * 切换TAB的广播 <br/>
+	 * 切换TAB的广播
 	 *
-	 * 实现方法<br/>
-	 * ProductActivity.setLastMenuIndex(currentItem);<br/>
-	 * 发送切换TAB的广播到MainActivity，1:TabHost的currentTab，即产品.<br/>
-	 * sendBroadcast(new Intent(MainActivity.ACTION_INTENT_FILTER).putExtra(MainActivity.ACTION_CURRENT_TAB, 1));<br/>
+	 * 实现方法
+	 * ProductActivity.setLastMenuIndex(currentItem);
+	 * 发送切换TAB的广播到MainActivity，1:TabHost的currentTab，即产品.
+	 * sendBroadcast(new Intent(MainActivity.ACTION_INTENT_FILTER).putExtra(MainActivity.ACTION_CURRENT_TAB, 1));
 	 *
-	 * @author wuguangxin
-	 * @date: 2016-1-22 下午3:44:11
+	 * <p>Created by wuguangxin on 16/1/22 </p>
 	 */
 	private class SwitchTabHostReceiver extends BroadcastReceiver{
 		@Override
@@ -175,7 +173,7 @@ public abstract class XinTabActivity extends TabActivity{
 
 	/**
 	 * 当Tab切换前的监听回调
-	 * @param onTabSwitchListener
+	 * @param onTabSwitchListener 监听器
      */
 	public void setOnTabSwitchListener(OnTabSwitchListener onTabSwitchListener) {
 		this.onTabSwitchListener = onTabSwitchListener;
@@ -200,7 +198,7 @@ public abstract class XinTabActivity extends TabActivity{
 
 		/**
 		 * 重置TabHost位置到0
-		 * @param context
+		 * @param context 上下文
 		 */
 		public static void reset(Context context){
 			setPosition(context, 0);
@@ -208,7 +206,7 @@ public abstract class XinTabActivity extends TabActivity{
 
 		/**
 		 * 切换TabHost位置 0-1-2-3
-		 * @param context
+		 * @param context 上下文
 		 * @param position tab位置
 		 */
 		public static void setPosition(Context context, int position){
@@ -219,6 +217,7 @@ public abstract class XinTabActivity extends TabActivity{
 
 		/**
 		 * 返回到上一个位置
+		 * @param context 上下文
 		 */
 		public static void back(final Context context){
 			int last = 0;
@@ -241,9 +240,8 @@ public abstract class XinTabActivity extends TabActivity{
 
 	/**
 	 * TabHost需要的信息
-	 * 
-	 * @author wuguangxin
-	 * @date: 2016-1-22 下午5:23:07
+	 *
+	 * <p>Created by wuguangxin on 16/1/22 </p>
 	 */
 	public class Tab{
 		/** Tab的名字 */
@@ -274,7 +272,7 @@ public abstract class XinTabActivity extends TabActivity{
 
 	/**
 	 * 获取TAB信息，请子类自行复写该方法
-	 * @return
+	 * @return TAB信息
 	 */
 	public ArrayList<Tab> getTabList(){
 		ArrayList<Tab> tabList = new ArrayList<XinTabActivity.Tab>();

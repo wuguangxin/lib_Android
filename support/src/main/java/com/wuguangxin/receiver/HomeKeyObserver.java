@@ -8,8 +8,7 @@ import android.content.IntentFilter;
 /**
  * Home键状态观察者
  *
- * @author wuguangxin
- * @date: 2015-3-31 上午11:43:03
+ * <p>Created by wuguangxin on 15/3/31 </p>
  */
 public class HomeKeyObserver {
 	private OnHomePressedListener mOnHomePressedListener;
@@ -36,7 +35,6 @@ public class HomeKeyObserver {
 	
 	/**
 	 * 停止Home键监听
-	 * @return 
 	 */
 	public void unregister(){
 		if(isRegister && mReceiver != null){
@@ -76,10 +74,9 @@ public class HomeKeyObserver {
 	}
 	
 	/**
-	 * Home键监听回调接口  
+	 * Home键监听回调接口
 	 *
-	 * @author wuguangxin
-	 * @date: 2015-3-31 上午11:42:46
+	 * <p>Created by wuguangxin on 15/3/31 </p>
 	 */
 	public interface OnHomePressedListener{
 		/**

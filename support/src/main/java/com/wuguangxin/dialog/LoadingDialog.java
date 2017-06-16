@@ -16,8 +16,8 @@ import com.wuguangxin.R;
 
 /**
  * 耗时操作时显示的对话框
- * 
- * @author wuguangxin
+ *
+ * <p>Created by wuguangxin on 14/8/29 </p>
  */
 public class LoadingDialog extends Dialog {
 	private Context context;

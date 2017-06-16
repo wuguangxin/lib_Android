@@ -1,19 +1,16 @@
 package com.wuguangxin.view;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Context;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 流布局 布局中添加多个view，当其中某几个view的总宽度大于父view的宽度时，自动换行显示
- * 
- * @author wuguangxin
- * @date: 2014-10-23 上午11:18:18
  */
 public class FlowLayout extends ViewGroup{
 	public static final int DEFAULT_SPACING = 20;

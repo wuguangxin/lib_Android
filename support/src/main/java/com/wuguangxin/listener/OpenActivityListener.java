@@ -1,17 +1,17 @@
 package com.wuguangxin.listener;
 
-import com.wuguangxin.utils.Logger;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import com.wuguangxin.utils.Logger;
+
 /**
  * 创建此监听器，便捷的打开目标界面
- * @author wuguangxin
- * @date: 2014-9-22 上午11:57:50
+ *
+ * <p>Created by wuguangxin on 14-9-22 </p>
  */
 public class OpenActivityListener  implements OnClickListener{
 	private Class<?> clazz;

@@ -62,7 +62,7 @@ import java.util.List;
 /**
  * Android系统相关的一些工具方法
  *
- * @author wuguangxin
+ * <p>Created by wuguangxin on 15/6/14 </p>
  */
 @SuppressLint("NewApi")
 public class AndroidUtils {
@@ -505,8 +505,8 @@ public class AndroidUtils {
     }
 
     /**
-     * 获取联系人电话 <br/>
-     * 参考http://www.2cto.com/kf/201109/104686.html <br/>
+     * 获取联系人电话
+     * 参考http://www.2cto.com/kf/201109/104686.html
      * @param cursor
      * @return
      */

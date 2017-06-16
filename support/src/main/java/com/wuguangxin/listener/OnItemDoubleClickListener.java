@@ -7,8 +7,7 @@ import android.widget.AdapterView.OnItemClickListener;
 /**
  * 防止多次点击的 OnItemClickListener
  *
- * @author wuguangxin
- * @date: 2015-12-24 下午1:54:58
+ * <p>Created by wuguangxin on 15-12-24 </p>
  */
 public abstract class OnItemDoubleClickListener implements OnItemClickListener{
 	public static long MIN_ITEM_DOUBLE_CLICK_SPANCE_TIME = 1000;
@@ -32,10 +31,10 @@ public abstract class OnItemDoubleClickListener implements OnItemClickListener{
 	
 	/**
 	 * 当正确的点击item时回调
-	 * @param parent
-	 * @param view
-	 * @param position
-	 * @param id
+	 * @param parent parent
+	 * @param view view
+	 * @param position position
+	 * @param id id
 	 */
 	public abstract void onItemClicked(AdapterView<?> parent, View view, int position, long id);
 	

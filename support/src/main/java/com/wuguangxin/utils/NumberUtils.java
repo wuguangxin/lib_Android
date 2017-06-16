@@ -11,7 +11,7 @@ import java.text.NumberFormat;
 /**
  * 数字格式化工具类
  *
- * @author wuguangxin
+ * <p>Created by wuguangxin on 14/6/2 </p>
  */
 public class NumberUtils {
     private static DecimalFormat format = new DecimalFormat();
@@ -73,9 +73,9 @@ public class NumberUtils {
      * 1. CEILING 		如果BigDecimal是正的，则做ROUND_UP操作；如果为负，则做ROUND_DOWN操作。
      * 2. DOWN 		    从不在舍弃(即截断)的小数之前增加数字。
      * 3. FLOOR 		如果BigDecimal为正，则作UP；如果为负，则作DOWN。
-     * 4. HALF_DOWN 	若舍弃部分>.5，则作UP；否则，作DOWN。
+     * 4. HALF_DOWN 	若舍弃部分大于0.5，则作UP；否则，作DOWN。
      * 5. HALF_EVEN 	如果舍弃部分左边的数字为奇数，则作HALF_UP；如果它为偶数，则作   HALF_DOWN   。
-     * 6. HALF_UP 		若舍弃部分>=.5，则作UP；否则，作DOWN。
+     * 6. HALF_UP 		若舍弃部分大于0.5，则作UP；否则，作DOWN。
      * 7. UNNECESSARY 	该“伪舍入模式”实际是指明所要求的操作必须是精确的，，因此不需要舍入操作。
      * 8. UP 			总是在非0舍弃小数(即截断)之前增加数字。
      * @return

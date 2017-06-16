@@ -1,7 +1,9 @@
 package com.wuguangxin.listener;
 
 /**
- * @author andong ListView刷新的监听事件
+ * ListView刷新的监听事件
+ *
+ * <p>Created by wuguangxin on 14/6/14 </p>
  */
 public interface OnRefreshListener {
 

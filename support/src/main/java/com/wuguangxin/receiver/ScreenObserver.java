@@ -7,9 +7,8 @@ import android.content.IntentFilter;
 
 /**
  * 监听屏幕锁定和解锁状态
- * 
- * @author wuguangxin
- * @date: 2014-5-12 下午5:51:19
+ *
+ * <p>Created by wuguangxin on 14/5/12 </p>
  */
 public class ScreenObserver {
 	private Context mContext;
@@ -39,7 +38,6 @@ public class ScreenObserver {
 
 	/**
 	 * 注册屏幕状态监听
-	 * @return 
 	 */
 	public void register() {
 		if(!isRegister){

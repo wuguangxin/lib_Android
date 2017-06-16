@@ -1,11 +1,11 @@
 package com.wuguangxin.voice;
 
-import java.io.File;
-
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.media.MediaPlayer.OnPreparedListener;
 import android.text.TextUtils;
+
+import java.io.File;
 
 public class MediaUtils{
 	private static MediaPlayer mediaPlayer = new MediaPlayer(); //播放器对象 
@@ -20,7 +20,7 @@ public class MediaUtils{
 
 	/**
 	 * 播放
-	 * @param file
+	 * @param path
 	 */
 	public static void play(String path){
 		if (!TextUtils.isEmpty(path)) {

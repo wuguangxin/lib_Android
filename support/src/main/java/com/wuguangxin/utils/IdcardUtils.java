@@ -12,7 +12,8 @@ import java.util.Map;
 import java.util.regex.Pattern;
 
 /**
- * 身份证工具类 注：公民身份证号码按照 GB11643—1999《公民身份证号码》国家标准编制， 由18位数字组成： 前6位为行政区划分代码， 第7位至14位为出生日期码， 第15位至17位为顺序码， 第18位为校验码。
+ * 身份证工具类 注：公民身份证号码按照 GB11643—1999《公民身份证号码》国家标准编制，
+ * 由18位数字组成： 前6位为行政区划分代码， 第7位至14位为出生日期码， 第15位至17位为顺序码， 第18位为校验码。
  */
 @SuppressLint({"SimpleDateFormat", "DefaultLocale"})
 public class IdcardUtils{

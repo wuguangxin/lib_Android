@@ -14,6 +14,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.SweepGradient;
 import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -27,7 +28,6 @@ import com.wuguangxin.R;
  * 陈朝勇
  * 仿支付宝芝麻信用圆形仪表盘
  */
-
 public class RoundIndicatorView extends View {
     private final static int DEF_BACKGROUND_COLOR = 0xFFC2EDFF; // 默认进度条底色
     private final static int DEF_START_COLOR = 0xFFFF5803; // 默认进度条渐变开始颜色
@@ -93,7 +93,8 @@ public class RoundIndicatorView extends View {
         });
         anim.start();
     }
-    @android.support.annotation.RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
+
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     private int calculateColor(int value){
         ArgbEvaluator evealuator = new ArgbEvaluator();
         float fraction;

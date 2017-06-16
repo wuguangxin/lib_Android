@@ -8,8 +8,7 @@ import android.content.IntentFilter;
 /**
  * Home键监听
  *
- * @author wuguangxin
- * @date: 2015-3-31 上午11:43:03
+ * <p>Created by wuguangxin on 15-3-31 </p>
  */
 public class HomeWatcher{
 	private Context mContext;
@@ -19,10 +18,9 @@ public class HomeWatcher{
 	private boolean isRegister;
 	
 	/**
-	 * Home键监听回调接口  
+	 * Home键监听回调接口
 	 *
-	 * @author wuguangxin
-	 * @date: 2015-3-31 上午11:42:46
+	 * <p>Created by wuguangxin on 15/3/31 </p>
 	 */
 	public interface OnHomePressedListener{
 		/**
@@ -44,7 +42,7 @@ public class HomeWatcher{
 	/**
 	 * 设置监听
 	 * 
-	 * @param listener
+	 * @param listener 回调
 	 */
 	public void setOnHomePressedListener(OnHomePressedListener listener){
 		mListener = listener;

@@ -1,16 +1,21 @@
 package com.wuguangxin.utils;
 
-import java.util.Random;
-
 import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Bitmap.Config;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
+import java.util.Random;
+
+/**
+ * 本地验证码工具类
+ *
+ * <p>Created by wuguangxin on 14/4/14 </p>
+ */
 public class VerifyCodeUtil{
 	// 默认数据
 	private static final int DEFAULT_CODE_LENGTH = 4;
@@ -160,9 +165,8 @@ public class VerifyCodeUtil{
 
 	/**
 	 * 创建验证码回调
-	 * 
-	 * @author wuguangxin
-	 * @date: 2015-3-19 上午11:30:33
+	 *
+	 * <p>Created by wuguangxin on 15/3/19 </p>
 	 */
 	public static class CallBackHandler extends Handler{
 		@Override

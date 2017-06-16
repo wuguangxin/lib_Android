@@ -1,17 +1,16 @@
 package com.wuguangxin.adapter.base;
 
-import java.util.List;
-
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+import java.util.List;
+
 /**
  * 基本List适配器
  *
- * @author wuguangxin
- * @date: 2014-11-17 下午2:05:38
+ * <p>Created by wuguangxin on 14/11/17 </p>
  */
 public abstract class BaseListAdapter extends BaseAdapter{
 	public Context context;

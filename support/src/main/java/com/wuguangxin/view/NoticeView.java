@@ -26,8 +26,7 @@ import java.util.TimerTask;
 /**
  * 上下切换滚动的TextView
  *
- * @author wuguangxin
- * @date: 2016-3-2 下午3:18:18
+ * <p>Created by wuguangxin on 16/3/2 </p>
  */
 @SuppressLint("HandlerLeak")
 public class NoticeView extends TextSwitcher implements ViewSwitcher.ViewFactory, android.view.View.OnClickListener{

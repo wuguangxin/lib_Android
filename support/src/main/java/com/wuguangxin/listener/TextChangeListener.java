@@ -19,7 +19,7 @@ import com.wuguangxin.utils.MoneyUtils;
  * EditText内容变化监听类，当文本框获得输入焦点并输入了内容时，显示你定义的清除内容的按钮，
  * 当失去输入焦点，则隐藏按钮，当点击清除按钮时，清空文本框的内容
  *
- * @author wuguangxin
+ * <p>Created by wuguangxin on 15/4/14 </p>
  */
 public class TextChangeListener implements TextWatcher, OnClickListener, OnFocusChangeListener{
 	private EditText mEditText;
@@ -36,8 +36,6 @@ public class TextChangeListener implements TextWatcher, OnClickListener, OnFocus
 	private Animation fade_in;
 	private Animation fade_out;
 
-	/**
-	 */
 	public TextChangeListener(){
 		this(null, null, TextType.TEXT);
 	}
@@ -79,6 +77,7 @@ public class TextChangeListener implements TextWatcher, OnClickListener, OnFocus
 	 * @param editText 要监听的EditText
 	 * @param clearBtn 清除按钮
 	 * @param textType 输入文本类型如，看TextChangeListener.TextType类（有手机号码、金额等类型）
+	 * @param callBack 回调
 	 */
 	public TextChangeListener(EditText editText, View clearBtn, int textType, EditTextCallBack callBack){
 		this.context = editText.getContext();
@@ -294,8 +293,7 @@ public class TextChangeListener implements TextWatcher, OnClickListener, OnFocus
 	/**
 	 * EditText输入的文本内容类型
 	 *
-	 * @author wuguangxin
-	 * @date: 2014-9-25 下午1:43:37
+	 * <p>Created by wuguangxin on 14/9/25 </p>
 	 */
 	public static class TextType {
 		/**
@@ -309,8 +307,8 @@ public class TextChangeListener implements TextWatcher, OnClickListener, OnFocus
 		public static int MONEY = 1;
 		
 		/**
-		 * 手机号码类型。<br> 
-		 * 将格式化为如 186 1111 2222样式，并在输入过程中自动格式化 <br>
+		 * 手机号码类型。
+		 *  将格式化为如 186 1111 2222样式，并在输入过程中自动格式化；
 		 *  当调用getText()时，务必调用.replaceAll(" ", "")，去掉所有空格。
 		 */
 		public static int PHONE = 2;

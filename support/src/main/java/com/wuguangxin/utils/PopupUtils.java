@@ -1,7 +1,5 @@
 package com.wuguangxin.utils;
 
-import java.lang.reflect.Method;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
@@ -14,11 +12,12 @@ import android.widget.PopupMenu;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
+import java.lang.reflect.Method;
+
 /**
  * PopupWindow工具类
  *
- * @author wuguangxin
- * @date: 2015-2-6 下午3:24:28
+ * <p>Created by wuguangxin on 15/2/6 </p>
  */
 public class PopupUtils{
 	private static PopupWindow mPopupWindows;
@@ -27,9 +26,8 @@ public class PopupUtils{
 	private static BitmapDrawable emptyBitmapDrawable = new BitmapDrawable();
 	
 	/**
-	 * 弹出默认PopupWindow, 透明度默认使用0.95f <br>
+	 * 弹出默认PopupWindow, 透明度默认使用0.95f。
 	 * 记得在Antivity.finish前调PopupUtils.dismiss();
-	 * @param context
 	 * @param parentView 在哪个View下面弹出
 	 * @param msg 消息文本
 	 */
@@ -39,7 +37,7 @@ public class PopupUtils{
 	}
 	
 	/**
-	 * 弹出默认PopupWindow, 透明度默认使用0.95f <br>
+	 * 弹出默认PopupWindow, 透明度默认使用0.95f。
 	 * 记得在Antivity.finish前调PopupUtils.dismiss();
 	 * @param context
 	 * @param parentView 在哪个View下面弹出
@@ -123,7 +121,7 @@ public class PopupUtils{
 	 * @param height 菜单的高度
 	 * @param xoff x轴偏移量
 	 * @param yoff y轴偏移量
-	 * @param alpha 菜单布局透明度 0.0f~1.0f（sdk版本 >= 11 有效）
+	 * @param alpha 菜单布局透明度 0.0f~1.0f（sdk版本 大于等于 11 有效）
 	 */
 	@SuppressLint("NewApi")
 	public static void showMenu(Context context, View contentView, View parentView, int width, int height, int xoff, int yoff, float alpha){
@@ -139,7 +137,7 @@ public class PopupUtils{
 	 * @param height 菜单的高度
 	 * @param xoff x轴偏移量
 	 * @param yoff y轴偏移量
-	 * @param alpha 菜单布局透明度 0.0f~1.0f（sdk版本 >= 11 有效）
+	 * @param alpha 菜单布局透明度 0.0f~1.0f（sdk版本 大于等于 11 有效）
 	 * @param outsideTouchable 点击外部关闭窗口
 	 */
 	@SuppressLint("NewApi")

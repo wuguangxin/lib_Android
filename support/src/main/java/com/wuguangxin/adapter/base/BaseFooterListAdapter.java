@@ -1,20 +1,19 @@
 package com.wuguangxin.adapter.base;
 
-import java.math.BigDecimal;
-import java.util.List;
-
-import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
-
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
+
+import java.math.BigDecimal;
+import java.util.List;
+
 /**
  * 账单详情适配器
  *
- * @author wuguangxin
- * @date: 2014-11-17 下午2:05:38
+ * <p>Created by wuguangxin on 14/11/17 </p>
  */
 public abstract class BaseFooterListAdapter extends BaseListAdapter {
 	public BigDecimal zero = new BigDecimal(0); 
@@ -28,7 +27,7 @@ public abstract class BaseFooterListAdapter extends BaseListAdapter {
 	public abstract View getView(int position, View convertView, ViewGroup parent);
 
 	/**
-	 * 控制下拉刷新组件的刷新模式，当适配器已经显示了全部的数据后，不可在上拉加载。 <br/>
+	 * 控制下拉刷新组件的刷新模式，当适配器已经显示了全部的数据后，不可在上拉加载。
 	 * 如果数据没有加载完全，则隐藏脚布局（附加如果第一页就显示完数据了，但数据小于5条的，也隐藏脚布局）。
 	 * @param mPullRefreshListView 下拉刷新组件
 	 * @param mFooterView 页脚信息View

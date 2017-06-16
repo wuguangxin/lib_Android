@@ -1,9 +1,5 @@
 package com.wuguangxin.utils;
 
-import java.lang.reflect.Field;
-
-import com.wuguangxin.R;
-
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.Dialog;
@@ -14,11 +10,14 @@ import android.content.Intent;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.wuguangxin.R;
+
+import java.lang.reflect.Field;
+
 /**
  * 对话框工具类
  *
- * @author wuguangxin
- * @date: 2014-9-11 下午4:01:22
+ * <p>Created by wuguangxin on 14/9/11 </p>
  */
 public class DialogUtils{
 

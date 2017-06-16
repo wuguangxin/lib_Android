@@ -1,7 +1,5 @@
 package com.wuguangxin.view;
 
-import com.wuguangxin.R;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -11,11 +9,12 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.wuguangxin.R;
+
 /**
  * 仿QQ5.5的滑动开关
  *
- * @author wuguangxin
- * @date: 2015-4-8 上午1:39:08
+ * <p>Created by wuguangxin on 15/4/8 </p>
  */
 public class SwitchView extends View{
 
@@ -145,7 +144,7 @@ public class SwitchView extends View{
 		 * 当前状态。true: ON  false:OFF
 		 * @param currentState
 		 */
-		public void onSwitchChanged(SwitchView view, boolean currentState);
+		void onSwitchChanged(SwitchView view, boolean currentState);
 	}
 	
 }

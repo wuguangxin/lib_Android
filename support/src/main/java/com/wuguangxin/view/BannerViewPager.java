@@ -17,21 +17,19 @@ import java.lang.reflect.Field;
 /**
  * Banner自动轮播ViewPager
  * <ul>
- * <strong>Basic Setting and Usage</strong>
+ * <b>Basic Setting and Usage</b>
  * <li>{@link #startAutoScroll()} start auto scroll, or {@link #startAutoScroll(int)} start auto scroll delayed</li>
  * <li>{@link #stopAutoScroll()} stop auto scroll</li>
  * <li>{@link #setInterval(long)} set auto scroll time in milliseconds, default is {@link #DEFAULT_INTERVAL}</li>
  * </ul>
  * <ul>
- * <strong>Advanced Settings and Usage</strong>
+ * <b>Advanced Settings and Usage</b>
  * <li>{@link #setDirection(int)} set auto scroll direction</li>
  * <li>{@link #setCycle(boolean)} set whether automatic cycle when auto scroll reaching the last or first item, default
  * is true</li>
  * <li>{@link #setSlideBorderMode(int)} set how to process when sliding at the last or first item</li>
  * <li>{@link #setStopScrollWhenTouch(boolean)} set whether stop auto scroll when touching, default is true</li>
  * </ul>
- *
- * @see <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2013-12-30
  */
 public class BannerViewPager extends ViewPager {
 
@@ -115,6 +113,7 @@ public class BannerViewPager extends ViewPager {
 
     /**
      * set the factor by which the duration of sliding animation will change while swiping
+     * @param scrollFactor scrollFactor
      */
     public void setSwipeScrollDurationFactor(double scrollFactor) {
         swipeScrollFactor = scrollFactor;
@@ -122,6 +121,7 @@ public class BannerViewPager extends ViewPager {
 
     /**
      * set the factor by which the duration of sliding animation will change while auto scrolling
+     * @param scrollFactor scrollFactor
      */
     public void setAutoScrollDurationFactor(double scrollFactor) {
         autoScrollFactor = scrollFactor;
@@ -176,11 +176,11 @@ public class BannerViewPager extends ViewPager {
     }
 
     /**
-     * <ul>
      * if stopScrollWhenTouch is true
-     * <li>if event is down, stop auto scroll.</li>
-     * <li>if event is up, start auto scroll again.</li>
-     * </ul>
+     * 1、if event is down, stop auto scroll.
+     * 2、if event is up, start auto scroll again.
+     * @param ev MotionEvent
+     * @return ..
      */
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
@@ -204,8 +204,8 @@ public class BannerViewPager extends ViewPager {
             PagerAdapter adapter = getAdapter();
             int pageCount = adapter == null ? 0 : adapter.getCount();
             /**
-             * current index is first one and slide to right or current index is last one and slide to left.<br/>
-             * if slide border mode is to parent, then requestDisallowInterceptTouchEvent false.<br/>
+             * current index is first one and slide to right or current index is last one and slide to left.
+             * if slide border mode is to parent, then requestDisallowInterceptTouchEvent false.
              * else scroll to last one when current item is first one, scroll to first one when current item is last
              * one.
              */
@@ -319,7 +319,7 @@ public class BannerViewPager extends ViewPager {
     /**
      * set whether stop auto scroll when touching, default is true
      *
-     * @param stopScrollWhenTouch
+     * @param stopScrollWhenTouch default is true
      */
     public void setStopScrollWhenTouch(boolean stopScrollWhenTouch) {
         this.stopScrollWhenTouch = stopScrollWhenTouch;
@@ -348,7 +348,7 @@ public class BannerViewPager extends ViewPager {
     /**
      * whether animating when auto scroll at the last or first item, default is true
      *
-     * @return
+     * @return default is true
      */
     public boolean isBorderAnimation() {
         return isBorderAnimation;
@@ -357,7 +357,7 @@ public class BannerViewPager extends ViewPager {
     /**
      * set whether animating when auto scroll at the last or first item, default is true
      *
-     * @param isBorderAnimation
+     * @param isBorderAnimation whether animating
      */
     public void setBorderAnimation(boolean isBorderAnimation) {
         this.isBorderAnimation = isBorderAnimation;
@@ -394,6 +394,7 @@ public class BannerViewPager extends ViewPager {
 
         /**
          * Set the factor by which the duration will change
+         * @param scrollFactor Set the factor by which the duration will change
          */
         public void setScrollDurationFactor(double scrollFactor) {
             this.scrollFactor = scrollFactor;

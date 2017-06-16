@@ -8,8 +8,8 @@ import java.text.DecimalFormat;
 
 /**
  * 金额格式化工具类
- * 
- * @author wuguangxin
+ *
+ * <p>Created by wuguangxin on 14/6/2 </p>
  */
 public class MoneyUtils{
 //	private static DecimalFormat decimalFormat = new DecimalFormat();

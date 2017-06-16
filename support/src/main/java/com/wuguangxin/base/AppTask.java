@@ -20,9 +20,10 @@ public class AppTask {
 	public static long exitTime;
 	/** 队列集合 */
 	private static LinkedList<Activity> taskList = new LinkedList<Activity>();
-	
+
 	/**
 	 * 入栈
+	 * @param activity 入栈的 Activity
 	 */
 	public static void inTask(Activity activity){
 		if(activity != null){
@@ -62,9 +63,10 @@ public class AppTask {
 		}
 
 	}
-	
+
 	/**
 	 * 出栈
+	 * @param activity 出栈的Activity
 	 */
 	public static void outTask(Activity activity){
 		if (taskList != null && taskList.size() > 0){
@@ -78,6 +80,7 @@ public class AppTask {
 
 	/**
 	 * 清栈
+	 * @return 是否是空的
 	 */
 	public static boolean clearTask(){
 		if (taskList != null && !taskList.isEmpty()) {
@@ -99,7 +102,7 @@ public class AppTask {
 	
 	/**
 	 * 获取栈顶Activity
-	 * @return
+	 * @return 栈顶Activity
 	 */
 	public static Activity getTopActivity(){
 		if (taskList != null && !taskList.isEmpty()) {
@@ -157,12 +160,16 @@ public class AppTask {
 	
 	/**
 	 * 获取栈大小
-	 * @return
+	 * @return 栈大小
 	 */
 	public static int getTaskSize(){
 		return taskList != null ? taskList.size() : 0;
 	}
-	
+
+	/**
+	 *
+	 * @return 列表
+	 */
 	public static LinkedList<Activity> getTaskList(){
 		return taskList;
 	}

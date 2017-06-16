@@ -1,7 +1,5 @@
 package com.wuguangxin.view;
 
-import com.wuguangxin.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -14,11 +12,12 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
+import com.wuguangxin.R;
+
 /**
  * 显示百分比的圆环
  *
- * @author wuguangxin
- * @date: 2015-7-20 下午2:12:42
+ * <p>Created by wuguangxin on 15/7/20 </p>
  */
 public class PerCircleView extends ImageView{
 	private Context context;

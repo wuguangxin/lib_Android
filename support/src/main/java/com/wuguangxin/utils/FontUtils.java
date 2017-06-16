@@ -18,11 +18,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 对TextView中的文字样式设置的工具类 <br/>
- *  http://blog.csdn.net/wgxhxh/article/details/45668921 <br/>
- *  http://www.jb51.net/article/37229.htm <br/>
- * @author wuguangxin
- * @date: 2015-5-12 下午2:25:39
+ * 对TextView中的文字样式设置的工具类
+ *  http://blog.csdn.net/wgxhxh/article/details/45668921
+ *  http://www.jb51.net/article/37229.htm
+ *
+ * <p>Created by wuguangxin on 15/5/12 </p>
  */
 public class FontUtils{
 	/**

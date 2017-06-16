@@ -1,20 +1,19 @@
 package com.wuguangxin.dao;
 
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-
 /**
  * 城市查询
  *
- * @author wuguangxin
- * @date: 2015-1-9 下午3:28:52
+ * <p>Created by wuguangxin on 15/1/9 </p>
  */
 public class CityDao {
 	private MyHelper helper;
@@ -26,7 +25,7 @@ public class CityDao {
 	
 	/**
 	 * 获取省份信息集合
-	 * @return 返回<名称 - 编码>格式集合
+	 * @return 返回 名称 编码 格式集合
 	 */
 	public Map<String, String> getProvinceMap() {
 		SQLiteDatabase db = helper.getDatabase();
@@ -41,7 +40,7 @@ public class CityDao {
 	
 	/**
 	 * 获取省份名称列表
-	 * @return 
+	 * @return 列表
 	 */
 	public List<String> getProvinceNameList() {
 		SQLiteDatabase db = helper.getDatabase();
@@ -57,7 +56,7 @@ public class CityDao {
 	/**
 	 * 根据省份编码获取城市信息集合
 	 * @param provinceCode 省份编码
-	 * @return 返回<名称 - 编码>格式集合
+	 * @return 返回 名称 编码 格式集合
 	 */
 	public Map<String, String> getCityMap(String provinceCode) {
 		SQLiteDatabase db = helper.getDatabase();
@@ -73,7 +72,7 @@ public class CityDao {
 	/**
 	 * 根据省份编码获取城市名称列表
 	 * @param provinceCode 省份编码
-	 * @return 
+	 * @return List
 	 */
 	public List<String> getCityNameList(String provinceCode) {
 		SQLiteDatabase db = helper.getDatabase();
@@ -89,7 +88,7 @@ public class CityDao {
 	/**
 	 * 根据城市简码获取区县列表
 	 * @param cityCode 城市编码
-	 * @return 返回<<名称 - 编码>格式集合
+	 * @return 返回 名称 编码 格式集合
 	 */
 	public Map<String, String> getCountyList(final String cityCode) {
 		SQLiteDatabase db = helper.getDatabase();

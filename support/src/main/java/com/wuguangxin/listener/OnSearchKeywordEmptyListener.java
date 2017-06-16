@@ -12,8 +12,7 @@ import android.widget.EditText;
  * 标题栏中搜索输入框内容变化监听器，输入框获得输入焦点并输入了内容时，显示你定义的清除内容的按钮，
  * 当失去输入焦点，则隐藏按钮，当点击清除按钮时，清空文本框的内容
  *
- * @author wuguangxin
- * @date: 2015-5-12 下午6:17:31
+ * <p>Created by wuguangxin on 15-5-12 </p>
  */
 public class OnSearchKeywordEmptyListener implements TextWatcher, OnClickListener, OnFocusChangeListener{
 	private EditText mEditText;

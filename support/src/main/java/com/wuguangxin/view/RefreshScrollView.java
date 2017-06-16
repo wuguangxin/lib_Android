@@ -12,7 +12,7 @@ import android.widget.ScrollView;
 /**
  * 可以上拉下拉刷新的ScrollView
  *
- * @author wuguangxin
+ * <p>Created by wuguangxin on 15/12/18 </p>
  */
 public class RefreshScrollView extends ScrollView {
 	// 移动因子, 就是手指在Y轴移动的距离与View移动的距离的比例（一般是手指移动60，View应该移动20即可，即MOVE_FACTOR = 0.3f）
@@ -216,8 +216,8 @@ public class RefreshScrollView extends ScrollView {
 
 	/**
 	 * 刷新回调
-	 * @author wuguangxin
-	 * @date: 2015-12-18 下午4:05:22
+	 *
+	 * <p>Created by wuguangxin on 15/12/18 </p>
 	 */
 	public interface OnRefreshListener{
 		void onRefresh(RefreshScrollView refreshScrollView);
@@ -240,8 +240,8 @@ public class RefreshScrollView extends ScrollView {
 
 	/**
 	 * 刷新模式
-	 * @author wuguangxin
-	 * @date: 2015-12-18 下午4:58:48
+	 *
+	 * <p>Created by wuguangxin on 15/12/18 </p>
 	 */
 	public static enum Mode {
 		/**

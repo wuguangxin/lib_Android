@@ -30,6 +30,11 @@ import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * 常用工具类
+ * 
+ * <p>Created by wuguangxin on 14/4/14 </p>
+ */
 public class Utils{
 	private static final String TAG = "Utils";
 	private static LoadingDialog loadingDialog;

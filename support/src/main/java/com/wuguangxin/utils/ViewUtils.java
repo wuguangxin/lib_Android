@@ -27,8 +27,8 @@ import com.wuguangxin.R;
 
 /**
  * View工具类
- * @author wuguangxin
- * @date: 2014-10-23 下午4:21:44
+ *
+ * <p>Created by wuguangxin on 14/10/23 </p>
  */
 public class ViewUtils{
 	/**

@@ -9,8 +9,7 @@ import android.content.Intent;
 /**
  * 通知工具类
  *
- * @author wuguangxin
- * @date: 2015-7-1 下午1:31:25
+ * <p>Created by wuguangxin on 15/7/1 </p>
  */
 public class NotificationUtils{
 private static boolean isShakeUsable;
@@ -33,7 +32,7 @@ private static boolean isAudioUsable;
 		NotificationManager nm = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE); 
 		PendingIntent pendingIntent = PendingIntent.getActivity(context, id, intent, PendingIntent.FLAG_ONE_SHOT);
 		// 设置点击状态栏的图标出现的提示信息
-		notification.setLatestEventInfo(context, title, message, pendingIntent); 
+//		notification.setLatestEventInfo(context, title, message, pendingIntent);
 		// audioStreamType的值必须AudioManager中的值，代表着响铃的模式
 		notification.audioStreamType = android.media.AudioManager.ADJUST_LOWER; 
 		// 点击通知自动消失

@@ -10,10 +10,10 @@ import java.security.NoSuchAlgorithmException;
 public class MD5 {
 
 	/**
-	 * 加密（如果text为 null 则转换为 ""）<br/>
-	 * 示例：<br/>
-	 * MD5.encode("") = d41d8cd98f00b204e9800998ecf8427e <br/>
-	 * MD5.encode(null) = d41d8cd98f00b204e9800998ecf8427e <br/>
+	 * 加密（如果text为 null 则转换为 ""）
+	 * 示例：
+	 * MD5.encode("") = d41d8cd98f00b204e9800998ecf8427e
+	 * MD5.encode(null) = d41d8cd98f00b204e9800998ecf8427e
 	 * @param text
 	 * @return
 	 */

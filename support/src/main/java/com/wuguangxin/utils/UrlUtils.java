@@ -7,8 +7,7 @@ import java.net.URLEncoder;
 /**
  * URL编码解码工具类
  *
- * @author wuguangxin
- * @date: 2014-8-20 下午1:17:12
+ * <p>Created by wuguangxin on 14/8/20 </p>
  */
 public class UrlUtils{
 	private static final String TAG = "UrlUtils";

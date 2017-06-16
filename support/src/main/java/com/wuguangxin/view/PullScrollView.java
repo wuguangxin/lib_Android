@@ -401,14 +401,12 @@ public class PullScrollView extends ScrollView {
 
     /**
      * 事件监听器
-     *
-     * @author markmjw
      */
     public interface OnTurnListener {
-        public void onPull(float y);
+        void onPull(float y);
 
-        public void onUp(float y);
+        void onUp(float y);
 
-        public void onRefresh();
+        void onRefresh();
     }
 }

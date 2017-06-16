@@ -6,9 +6,8 @@ import android.widget.LinearLayout;
 
 /**
  * 根据背景图片宽高比例，自动LinearLayout的高度
- * 
- * @author wuguangxin
- * @date 16/11/10 上午11:45
+ *
+ * <p>Created by wuguangxin on 16/11/10 </p>
  */
 public class AutoHeightLinearLayout extends LinearLayout {
 

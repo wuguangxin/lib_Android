@@ -1,10 +1,5 @@
 package com.wuguangxin.voice;
 
-import java.io.File;
-
-import com.wuguangxin.R;
-import com.wuguangxin.utils.ToastUtils;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
@@ -24,8 +19,15 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
+import com.wuguangxin.R;
+import com.wuguangxin.utils.ToastUtils;
+
+import java.io.File;
+
 /**
  * 录音管理器
+ *
+ * <p>Created by wuguangxin on 15/6/9 </p>
  */
 public class RecordManger{
 	private final String moveMsg = "上滑取消录音";
@@ -201,7 +203,6 @@ public class RecordManger{
 
 	/**
 	 * 停止录音并返回录音文件
-	 * @return
 	 */
 	public void stop(){
 		if (isRecording) {
@@ -324,9 +325,8 @@ public class RecordManger{
 
 	/**
 	 * 录音监听器
-	 * 
-	 * @author wuguangxin
-	 * @date: 2015-6-9 上午10:44:28
+	 *
+	 * <p>Created by wuguangxin on 15/6/9 </p>
 	 */
 	public static class OnRecordListener{
 		/**
@@ -353,23 +353,20 @@ public class RecordManger{
 
 	/**
 	 * 语音信息
-	 * 
-	 * @author wuguangxin
-	 * @date: 2015-6-10 下午5:01:58
+	 *
+	 * <p>Created by wuguangxin on 15/6/10 </p>
 	 */
-	public class VoiceInfo{
+	private class VoiceInfo {
 		/**
 		 * 录音文件
-		 * @return
 		 */
 		public File file; // 录音文件
 		/**
 		 * 录音时长
-		 * @return
 		 */
 		public String length; // 录音时长
 
-		public VoiceInfo(File file, String length){
+		VoiceInfo(File file, String length){
 			this.file = file;
 			this.length = length;
 		}
@@ -377,6 +374,8 @@ public class RecordManger{
 	
 	/**
 	 * 倒计时
+	 *
+	 * <p>Created by wuguangxin on 15/6/9 </p>
 	 */
 	class TimeCount extends CountDownTimer{
 		/**
